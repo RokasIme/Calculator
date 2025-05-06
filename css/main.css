@@ -29,11 +29,13 @@ body {
   background-color: #fff;
 }
 .calc .equation {
-  min-height: 1.5rem;
+  min-height: 1.1rem;
+  overflow: hidden;
 }
 .calc .result {
   min-height: 4rem;
-  font-size: 4rem;
+  font-size: 3rem;
+  overflow: hidden;
 }
 .calc .keyboard {
   display: grid;
@@ -57,4 +59,12 @@ body {
 .calc .key.height-2 {
   aspect-ratio: auto;
   grid-row: span 2;
+}
+
+.calc .key:hover {
+  box-shadow: #333 0.1rem 0.1rem 0.1rem;
+}
+
+.calc .key:active {
+  transform: translateY(2px);
 }
